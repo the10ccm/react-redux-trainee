@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+<head>
+  <!--link rel="stylesheet" href="{% static "build/style.min.css" %}"-->
+  <link rel="stylesheet" href="{% static "css/bootstrap/bootstrap.css" %}">
+  <link rel="stylesheet" href="{% static "css/bootstrap/bootstrap-theme.css" %}">
+  <link rel="stylesheet" href="{% static "css/app.css" %}">
+
+
+  {% block custom_head %}{% endblock %}
+</head>
+<body>
+  {% block content %}{% endblock %}
+  <script src="{% static "build/bundle.js" %}"></script>
+</body>
+</html>
